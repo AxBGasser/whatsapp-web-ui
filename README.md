@@ -1,2 +1,2 @@
 # Website-Clones
-A repo for website clone
+A repository for website clones
