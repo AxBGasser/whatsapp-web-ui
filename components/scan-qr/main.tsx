@@ -5,10 +5,10 @@ export default function ScanQR() {
     <>
       <div
         className='flex flex-col w-full min-w-[520px] max-w-[1000px]  mx-auto h-fit text-white z-50 
-        max-md-whatsapp:px-[36px] md-wa:px-auto overflow-hidden
-        before:left-0 before:bg-[#00a884] before:absolute before:top-0 before:w-screen before:h-[222px] before:-z-10'>
+        max-md-whatsapp:px-[36px] md-wa:px-auto overflow-hidden px-auto 
+        before:left-0 before:bg-[#00a884] before:absolute before:top-0 before:w-full before:min-w-[520px] before:h-[222px] before:-z-10'>
         <div
-          className='header flex-1 h-fit flex justify-start items-center w-full min-w-[520px] max-w-[1000px] pt-[27px] pb-[28px]  min:md:px-auto base:mb-[66px]
+          className='header flex-1 h-fit flex justify-start items-center w-fit  pt-[27px] pb-[28px]  min:md:px-auto base:mb-[66px]
         '>
           <span className='flex-0'>
             <svg xmlns='http://www.w3.org/2000/svg' width='39' height='39' viewBox='0 0 39 39'>
@@ -22,8 +22,9 @@ export default function ScanQR() {
           </span>
           <p className='flex-1 ml-[14px] uppercase text-[14px] font-sans font-medium'>Whatsapp Web</p>
         </div>
+        {/* Box Content */}
         <div className='flex flex-col flex-0 w-full h-fit overflow-hidden '>
-          <div className='box flex flex-col smd-whatsapp:flex-row justify-center pb-[102px] smd-whatsapp:items-start items-center  p-[58px] rounded-t-[3px] bg-white text-black shadow-[0px_0px_50px_0px_#0b141a30,0px_0px_15px_0px_#0b141a3d]'>
+          <div className='flex flex-col smd-whatsapp:flex-row justify-center pb-[102px] smd-whatsapp:items-start items-center  p-[58px] rounded-t-[3px] bg-white text-black shadow-[0px_0px_50px_0px_#0b141a30,0px_0px_15px_0px_#0b141a3d]'>
             <div className='instructions w-full smd-whatsapp:min-w-[275px] shrink flex-1 '>
               <h2 className='text-[28px] text-[#41525D] font-light font-sans mb-[52px]'>
                 Usa WhatsApp en tu computadora{' '}
@@ -60,8 +61,7 @@ export default function ScanQR() {
             </div>
           </div>
         </div>
-        <div className='box flex flex-col w-full min-w-[520px] max-w-[1000px] overflow-hidden justify-center text-center smd-whatsapp:items-start items-center relative p-[40px] rounded-[0]  bg-[#f9f9fa] text-black '>
-          {/* <div className='flex w-full  h-full flex-col  bg-[#0b141a06] text-black'> */}
+        <div className='box flex flex-col w-full overflow-hidden justify-center text-center smd-whatsapp:items-start items-center relative p-[40px] rounded-[0]  bg-[#f9f9fa] text-black '>
           <h1 className=' w-full text-[28px] font-light text-[#3b4a54] mb-[16px]'>Tutorial</h1>
           <a
             rel='noopener noreferrer'
@@ -70,7 +70,7 @@ export default function ScanQR() {
             target='_blank'>
             ¿Necesitas ayuda para comenzar?
           </a>
-          <div className='video w-[560px] h-[314px] mx-auto'>
+          <div className='video max-w-[560px] max-h-[314px] mx-auto'>
             <video className='w-full' width={100} height={100} controls>
               <source src='' type='video/mp4' />
             </video>
