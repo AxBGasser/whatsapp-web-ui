@@ -14,3 +14,13 @@ ol,
 li {
   list-style: revert;
 }
+::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgba(55, 64, 69, 255);
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
